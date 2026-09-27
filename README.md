@@ -1,6 +1,6 @@
 # High-Yield Dual-Channel Modular Tokamak Battery Architecture
 
-**Primary Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013 
+**Primary Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013  
 **Repository Domain:** Magnetic Confinement Fusion / Direct Energy Harvesting / Modular Power Plant Architecture  
 **License:** MIT License + Author Prior Art Notice  
 

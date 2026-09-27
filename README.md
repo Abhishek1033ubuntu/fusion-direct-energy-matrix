@@ -5,7 +5,7 @@
 [![Domain](https://img.shields.io/badge/Domain-Nuclear%20Fusion%20%26%20DEC-emerald.svg)](#)
 [![Status](https://img.shields.io/badge/Status-Verified%20Simulation-success.svg)](#)
 
-**Primary Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013 
+**Primary Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013  
 **Repository Domain:** Magnetic Confinement Fusion / Direct Energy Harvesting / Modular Power Plant Architecture  
 **License:** Standard MIT License  
 

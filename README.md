@@ -169,9 +169,9 @@ fusion-direct-energy-matrix/
 │   └── phase3_switching_optimizer.py   <-- Solid-State Switching Efficiency Script
 │
 └── figures/
-├── toroidal_field_ripple_profile.png
-├── phase2_power_extraction_curve.png
-└── lpp_modular_plant_footprint.png
+    ├── toroidal_field_ripple_profile.png
+    ├── phase2_power_extraction_curve.png
+    └── lpp_modular_plant_footprint.png
 
 ```
 

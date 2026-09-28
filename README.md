@@ -1,9 +1,9 @@
 # High-Yield Dual-Channel Modular Tokamak Battery Architecture (`fusion-direct-energy-matrix`)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![AI Collaborator](https://img.shields.io/badge/AI%20Collaborator-Gemini%20Flash-8E44AD.svg)](https://gemini.google.com)
-[![Domain](https://img.shields.io/badge/Domain-Nuclear%20Fusion%20%26%20DEC-emerald.svg)](#)
-[![Status](https://img.shields.io/badge/Status-Verified%20Simulation-success.svg)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) 
+[![AI Collaborator](https://img.shields.io/badge/AI%20Collaborator-Gemini%20Flash-8E44AD.svg)](https://gemini.google.com) 
+[![Domain](https://img.shields.io/badge/Domain-Nuclear%20Fusion%20%26%20DEC-emerald.svg)](#) 
+[![Status](https://img.shields.io/badge/Status-Verified%20Simulation-success.svg)](#) 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23010330-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23010330) 
 
 **Primary Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013  

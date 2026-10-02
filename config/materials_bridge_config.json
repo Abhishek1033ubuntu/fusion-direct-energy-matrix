@@ -17,8 +17,7 @@
         "phase3_breeder": {
             "material": "Pb0.83-Li0.17 Eutectic",
             "tritium_breeding_ratio": 1.15,
-            "ground_energy_eV_atom": -3.4596,
-            "density_g_cm3": 9.3
+            "ground_energy_eV_atom": -3.4596
         },
         "phase4_magnets": {
             "material": "REBCO YBa2Cu3O7 HTS",

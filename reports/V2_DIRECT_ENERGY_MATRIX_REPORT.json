@@ -1,0 +1,14 @@
+{
+    "repository": "fusion-direct-energy-matrix",
+    "version": "2.0.0",
+    "timestamp": "2026-09-15",
+    "dual_channel_architecture": {
+        "fusion_power_MWth": 1250.0,
+        "dec_power_MWe": 162.5,
+        "brayton_power_MWe": 569.25,
+        "gross_electric_MWe": 731.75,
+        "house_cryo_load_MW": 85.0,
+        "net_grid_output_MWe": 646.75,
+        "plant_q_factor": 7.61
+    }
+}

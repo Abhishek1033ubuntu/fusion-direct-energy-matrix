@@ -102,9 +102,8 @@ Linear Programming (LPP) optimization demonstrates that combining $B^4$ magnetic
 | **Net Power per Unit** | $34.8\text{ MW(e)}$ (Low Net) | **$646.8\text{ MW(e)}$ net/core** | **$38.0\text{ MW(e)}$ net/core** |
 | **Energy Conversion** | Single Thermal Steam ($33\%$) | **DEC ($65\%$) + Brayton ($46\%$)** | **DEC ($65\%$) + Brayton ($46\%$)** |
 | **Total Net Grid Power**| $1,200\text{ MW(e)}$ | **$1,293.5\text{ MW(e)}$ total** | **$1,216.0\text{ MW(e)}$ total** |
-| **Total Plant CapEx** | $\$15.0\text{ Billion USD}$ | **$\$2.1\text{ Billion USD}$** | **$\$2.8\text{ Billion USD}$** |
-| **Levelized Cost (LCOE)**| $\$110 / \text{MWh}$ | **$\$36 / \text{MWh}$** | **$\$42 / \text{MWh}$** |
-
+| **Total Plant CapEx** | $15.0 Billion USD | **$2.1 Billion USD** | **$2.8 Billion USD** |
+| **Levelized Cost (LCOE)** | $110 / MWh | **$36 / MWh** | **$42 / MWh** |
 ---
 
 ## 4. Secondary Material Cost Drivers

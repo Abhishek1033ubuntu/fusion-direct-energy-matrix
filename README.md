@@ -207,7 +207,3 @@ If using this architecture, solver modules, or dataset parameters in academic or
 ## License
 
 Distributed under the MIT License. See `LICENSE` for details.
-
-```
-
-```

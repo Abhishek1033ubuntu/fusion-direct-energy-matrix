@@ -11,14 +11,13 @@ repository-code: "https://github.com/Abhishek1033ubuntu/fusion-direct-energy-mat
 url: "https://github.com/Abhishek1033ubuntu/fusion-direct-energy-matrix"
 abstract: >-
   A magnetohydrodynamic (MHD) and electrostatic Direct Energy Conversion (DEC) matrix solver 
-  for high-field tokamak fusion reactors, cross-integrated with NextGen Tokamak Materials Suite parameters.
+  featuring asymmetric power stroke cycles, 20 Hz resonant drive, and 3D VDE feedback stabilization.
 license: MIT
-version: "2.0.0"
+version: "2.1.0"
 date-released: "2026-10-02"
 keywords:
   - fusion energy
   - direct energy conversion
-  - magnetohydrodynamics
-  - tokamak
-  - supercritical co2 brayton
-  - rebco
+  - power stroke cycle
+  - vertical displacement control
+  - resonant pulse frequency

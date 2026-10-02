@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0-nextgen-upgrade",
+    "source_suite": "nextgen-tokamak-materials-suite",
+    "ingested_parameters": {
+        "phase1_divertor": {
+            "material": "W0.25-Ta0.25-Cr0.25-V0.25 RHEA",
+            "max_heat_flux_MW_m2": 20.0,
+            "pugh_ratio": 15.766,
+            "vacancy_formation_eV": 3.1058
+        },
+        "phase2_structure": {
+            "material": "V0.92-Cr0.04-Ti0.04 Alloy",
+            "relative_permeability_ur": 1.0000,
+            "max_operating_temp_C": 750.0,
+            "pugh_ratio": 14.178
+        },
+        "phase3_breeder": {
+            "material": "Pb0.83-Li0.17 Eutectic",
+            "tritium_breeding_ratio": 1.15,
+            "ground_energy_eV_atom": -3.4596,
+            "density_g_cm3": 9.3
+        },
+        "phase4_magnets": {
+            "material": "REBCO YBa2Cu3O7 HTS",
+            "peak_field_Tesla": 20.0,
+            "operating_temp_K": 20.0,
+            "scaling_exponent_B4": 7.716
+        }
+    }
+}

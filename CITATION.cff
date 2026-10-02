@@ -1,20 +1,24 @@
 cff-version: 1.2.0
-message: "If you use this research or cryogenic thermal solver in your work, please cite it as below."
+title: "High-Yield Dual-Channel Modular Tokamak Battery Architecture (fusion-direct-energy-matrix)"
+message: "If you use this software or direct energy conversion models, please cite it using the metadata below."
+type: software
 authors:
   - family-names: "Singh"
     given-names: "Abhishek"
-    orcid: "https://orcid.org/0009-0004-6913-096X"
-title: "fusion-direct-energy-matrix"
-version: "1.0.0"
-date-released: 2026-09-27
-url: "https://github.com/Abhishek1033ubuntu/fusion-direct-energy-matrix"
+    email: "abhishek.singh.941491229013@proton.me"
+    website: "https://github.com/Abhishek1033ubuntu"
 repository-code: "https://github.com/Abhishek1033ubuntu/fusion-direct-energy-matrix"
-license: "MIT"
+url: "https://github.com/Abhishek1033ubuntu/fusion-direct-energy-matrix"
+abstract: >-
+  A magnetohydrodynamic (MHD) and electrostatic Direct Energy Conversion (DEC) matrix solver 
+  for high-field tokamak fusion reactors, cross-integrated with NextGen Tokamak Materials Suite parameters.
+license: MIT
+version: "2.0.0"
+date-released: "2026-10-02"
 keywords:
-  - "magnetic confinement fusion"
-  - "direct energy conversion"
-  - "tokamak"
-  - "plasma physics"
-  - "MHD"
-  - "modular nuclear architecture"
-  - "IAEA compliance"
+  - fusion energy
+  - direct energy conversion
+  - magnetohydrodynamics
+  - tokamak
+  - supercritical co2 brayton
+  - rebco

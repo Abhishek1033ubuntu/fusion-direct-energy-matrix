@@ -35,7 +35,7 @@ By treating the expanding plasma as a magnetic thermodynamic engine, the system 
                 ▼ (20% Alpha Channel)                           ▼ (80% Thermal Channel)
    ┌───────────────────────────┐                   ┌───────────────────────────┐
    │ 3.5 MeV Charged Alphas    │                   │ 14.1 MeV Neutral Neutrons │
-   │ & Outboard Expansion     │                   │ & Blanket Absorption      │
+   │ & Outboard Expansion      │                   │ & Blanket Absorption      │
    │ (δ_out = -0.50 Stroke)    │                   │ (750°C V-4Cr-4Ti Loop)    │
    └────────────┬──────────────┘                   └────────────┬──────────────┘
                 │                                               │
@@ -107,8 +107,8 @@ Linear Programming (LPP) optimization demonstrates that combining $B^4$ magnetic
 | **Energy Extraction Model** | Steam Thermal ($33\%$) | DEC ($65\%$) + Brayton ($46\%$) | **$P\,dV$ Work + DEC ($65\%$) + Brayton ($46\%$)** |
 | **Net Grid Power per Unit** | $34.8\text{ MW(e)}$ | $646.8\text{ MW(e)}$ | **$574.6\text{ MW(e)}$ net/core** |
 | **Net Energy Ratio ($\eta_{\text{net}}$)**| $0.23\times$ | $1.015\times$ | **$3.008\times$ (+196% margin)** |
-| **Total Plant CapEx** | $\$15.0\text{ Billion USD}$ | **$\$2.1\text{ Billion USD}$** | **$\$2.8\text{ Billion USD}$** |
-| **Levelized Cost (LCOE)** | $\$110 / \text{MWh}$ | **$\$36 / \text{MWh}$** | **$\$42 / \text{MWh}$** |
+| **Total Plant CapEx** | $15.0 Billion USD | **$2.1 Billion USD** | **$2.8 Billion USD** |
+| **Levelized Cost (LCOE)** | $110 / MWh | **$36 / MWh** | **$42 / MWh** |
 
 ---
 

@@ -1,71 +1,40 @@
 import numpy as np
-import json
-import os
 
 class DirectEnergyMatrixV2:
     """
-    Direct Energy Matrix Solver v2.0
-    Cross-integrated with NextGen Tokamak Materials Suite parameters.
+    Base Dual-Channel Harvesting Module (v2.0.0 Architecture).
+    Calculates electrostatic DEC yield and supercritical CO2 Brayton thermal outputs.
     """
-    def __init__(self, config_path="./config/materials_bridge_config.json"):
-        if os.path.exists(config_path):
-            with open(config_path, "r") as f:
-                self.config = json.load(f)["ingested_parameters"]
-        else:
-            self.config = {
-                "phase2_structure": {"relative_permeability_ur": 1.0, "max_operating_temp_C": 750.0},
-                "phase3_breeder": {"tritium_breeding_ratio": 1.15},
-                "phase4_magnets": {"peak_field_Tesla": 20.0}
-            }
+    def __init__(self, P_fusion_MW=1250.0, B0=20.0):
+        self.P_fusion = P_fusion_MW
+        self.B0 = B0
+        self.eta_dec = 0.65       # 65% Direct Electrostatic DEC efficiency
+        self.eta_brayton = 0.46   # 46% sCO2 Brayton thermal efficiency
 
-        self.B_field = self.config["phase4_magnets"]["peak_field_Tesla"]
-        self.mu_r = self.config["phase2_structure"]["relative_permeability_ur"]
-        self.T_outlet = self.config["phase2_structure"]["max_operating_temp_C"]
-        
-    def calculate_charged_particle_gyroradius(self, v_perp=5.0e6, particle_type="alpha"):
-        if particle_type == "alpha":
-            m, q = 6.64e-27, 3.20e-19
-        else:
-            m, q = 4.17e-27, 1.60e-19
-            
-        rho_g = (m * v_perp) / (q * self.B_field)
-        return rho_g
+    def compute_dual_channel_power(self):
+        # 20% Alpha Channel / Charged particle fraction
+        P_charged_MW = self.P_fusion * 0.20
+        P_dec_MWe = P_charged_MW * self.eta_dec
 
-    def calculate_mhd_pressure_drop(self, fluid_velocity=1.5, channel_length=5.0, sigma_fluid=1.0e6):
-        C_w = 0.01 if self.mu_r == 1.0 else 0.25
-        delta_P = sigma_fluid * fluid_velocity * (self.B_field ** 2) * channel_length * (C_w / (1.0 + C_w))
-        return delta_P / 1.0e6
+        # 80% Neutron Thermal Channel + Blanket Multiplication Factor (1.15)
+        P_thermal_MW = self.P_fusion * 0.80 * 1.15
+        P_brayton_MWe = P_thermal_MW * self.eta_brayton
 
-    def evaluate_energy_matrix(self, fusion_power_MW=1250.0, recirculating_power_MW=85.0):
-        p_neutron = fusion_power_MW * 0.80
-        p_alpha = fusion_power_MW * 0.20
-        
-        dec_efficiency = 0.65
-        p_dec_electric = p_alpha * dec_efficiency
-        p_alpha_thermal_remaining = p_alpha * (1.0 - dec_efficiency)
-        
-        brayton_efficiency = 0.46
-        total_thermal_MW = (p_neutron * 1.15) + p_alpha_thermal_remaining
-        p_brayton_electric = total_thermal_MW * brayton_efficiency
-        
-        gross_electric_MW = p_dec_electric + p_brayton_electric
-        net_electric_MW = gross_electric_MW - recirculating_power_MW
-        plant_q_factor = net_electric_MW / recirculating_power_MW
-        
+        P_gross_MWe = P_dec_MWe + P_brayton_MWe
+        P_cryo_MW = 85.0  # REBCO HTS 20K cryopump load
+        P_net_MWe = P_gross_MWe - P_cryo_MW
+
         return {
-            "fusion_power_MW": fusion_power_MW,
-            "toroidal_field_Tesla": self.B_field,
-            "direct_energy_conversion_MWe": round(p_dec_electric, 2),
-            "brayton_thermal_MWe": round(p_brayton_electric, 2),
-            "gross_electric_MWe": round(gross_electric_MW, 2),
-            "net_electric_MWe": round(net_electric_MW, 2),
-            "plant_q_factor": round(plant_q_factor, 2)
+            "Fusion_Thermal_MW": self.P_fusion,
+            "DEC_Electric_MWe": round(P_dec_MWe, 2),
+            "Brayton_Electric_MWe": round(P_brayton_MWe, 2),
+            "Gross_Electric_MWe": round(P_gross_MWe, 2),
+            "House_Cryo_Load_MW": P_cryo_MW,
+            "Net_Electric_MWe": round(P_net_MWe, 2),
+            "Plant_Q_Factor": round(P_gross_MWe / P_cryo_MW, 2)
         }
 
 if __name__ == "__main__":
-    engine = DirectEnergyMatrixV2()
-    results = engine.evaluate_energy_matrix()
-    print("Direct Energy Conversion (DEC):", results['direct_energy_conversion_MWe'], "MW(e)")
-    print("High-Temp Brayton Generation  :", results['brayton_thermal_MWe'], "MW(e)")
-    print("Net Electric Generation       :", results['net_electric_MWe'], "MW(e)")
-    print("Plant Q-Factor                :", results['plant_q_factor'], "x")
+    matrix = DirectEnergyMatrixV2()
+    out = matrix.compute_dual_channel_power()
+    print("v2.0 Base Yield:", out)

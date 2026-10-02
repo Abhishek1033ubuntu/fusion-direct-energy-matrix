@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![Integrated: NextGen Suite](https://img.shields.io/badge/Integrated-NextGen_Tokamak_Materials-blueviolet.svg)](https://github.com/Abhishek1033ubuntu/nextgen-tokamak-materials-suite) 
 [![Sponsor](https://img.shields.io/badge/Sponsor-fusion--direct--energy-ea4aaa?style=flat&logo=github-sponsors)](https://github.com/sponsors/Abhishek1033ubuntu) 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23099733-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23099733) 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23107883-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23107883) 
 
 **Lead Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013   
 **Research Contact:** `abhishek.singh.941491229013@proton.me` | [GitHub Profile](https://github.com/Abhishek1033ubuntu)  
